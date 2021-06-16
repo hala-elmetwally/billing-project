@@ -1,0 +1,1360 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+/*//Header/*/
+
+
+/*/Login/*/
+.login
+{
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    height: 450px;
+    width: 350px;
+    border: 3px outset #FF7900;
+    border-radius: 25px;
+    background-color: lightsteelblue;
+}
+.login .loginTitle
+{
+    display: block;
+    width: 100%;
+    height: 140px;
+    color: black;
+    text-align: center;
+    line-height: 140px;
+/*    text-decoration: underline;*/
+    font-family: serif;
+    font-size: 50px;
+}
+.login .userName
+{
+    height: 70px;
+    margin-bottom: 10px;
+}
+.login .userName span
+{
+    display: grid;
+    color:black;
+    margin-left: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    text-emphasis: 20px;
+}
+.login .userName input[type="text"]
+{
+    margin-left: 95px;
+    margin-top: 5px;
+    border-radius: 10px;
+    padding-left: 5px;
+    border-color: black;
+}
+.login .password
+{
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.login .password span
+{
+    display: grid;
+    color: black;    
+    margin-left: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    text-emphasis: 20px;
+}
+.login .password input[type="password"]
+{
+    margin-left: 95px;
+    margin-top: 5px;
+    border-radius: 10px;
+    padding-left: 5px;
+    border-color: black;
+}
+.login .submit
+{
+    height: 50px;
+    margin-top: 30px;
+}
+.login .submit .sub
+{
+    display: grid;
+    height: 50px;
+    width: 150px;
+    margin: auto;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bold;
+    border-color: black;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+.login .submit .sub:hover
+{
+    background-color: #FF7900;
+    border-color: white;
+    color: white;
+    border-radius: 15px;
+}
+/*/Login/*/
+/*/Service/*/
+/*.fullSize
+{
+    height: 570px;
+}
+.fullSize .addService
+{
+    display: inline-block;
+    height: 450px;
+    width: 350px;
+    margin-top: 50px;
+    border: 3px outset #FF7900;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0);    
+}
+.fullSize .addService .addSeriveTitle
+{
+    height: 130px;
+    display: block;
+    text-align: center;
+    line-height: 150px;
+    font-size: 50px;
+    font-family: monospace;
+    font-variant-caps: all-petite-caps;
+    color: #FF7900;
+}
+.fullSize .addService .addServiceInput span
+{
+    display: grid;
+    color: #FF7900;    
+    margin-left: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    text-emphasis: 20px;    
+}
+.fullSize .addService .addServiceInput input[type="text"]
+{
+    width: 220px;
+    margin-left: 65px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding-left: 5px;
+    border-color: chocolate;    
+}
+.fullSize .addService .addServiceInput select
+{
+    display: inline-block;
+    margin-left: 8.5%;
+    margin-top: 4%; 
+    border-radius: 25px;
+    color: #FF7900;
+    background-color: black;
+}
+.fullSize .addService .addServiceInput select:hover
+{
+    cursor: pointer;
+}
+.fullSize .addService .addServiceInput label
+{
+    color: #FF7900;    
+    margin-left: 10px;
+    margin-top: 4%; 
+    font-family: monospace;
+    font-size: 20px;
+    text-emphasis: 20px;       
+}
+.fullSize .addService .addServiceInput input[type="number"]
+{
+    display: inline-block;
+    margin-top: 4%;
+    padding-left: 50px;
+    width: 35%;
+    margin-left: 5px;
+    color: #FF7900;
+    background-color: black;
+    border-radius: 25px;
+}
+.fullSize .addService .addServiceInput h6
+{
+    color: #FF7900;
+    display: inline;
+}
+.fullSize .addService .addServiceSubmit
+{
+    height: 50px;
+    margin-top: 20px;
+}
+.fullSize .addService .addServiceSubmit .sub
+{
+    display: grid;
+    height: 50px;
+    width: 150px;
+    margin: auto;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bold;
+    border-color: chocolate;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+.fullSize .addService .addServiceSubmit .sub:hover
+{
+    background-color: #FF7900;
+    border-color: white;
+    color: white;
+    border-radius: 15px;
+}
+.fullSize .showAllServices
+{
+    width: 70%;
+    margin-top: 50px;
+    margin-right: 4%;
+    height: 500px;
+    float: right;
+}ServicProfil
+.fullAreaProfile
+{
+    height: 570px;
+}
+.fullAreaProfile .firstPageProfile
+{
+    height: 500px;
+    width: 50%;
+    display: flexbox;
+    margin: auto;
+    position: relative;
+    top: 7%;
+    border: 3px outset #FF7900;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0);   
+}
+.fullAreaProfile .firstPageProfile .firstProfilePageTitle
+{
+    margin-top: 5%;
+    height: auto;
+    text-align: center;
+    text-indent: 10px;
+    font-size: 40px;
+    font-family: monospace;
+    color: #FF7900;
+}
+.fullAreaProfile .firstPageProfile .firstProfilePageName
+{
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 5%;    
+}
+.fullAreaProfile .firstPageProfile .firstProfilePageName span
+{
+    display: grid;
+    color: #FF7900;    
+    margin-left: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    text-emphasis: 20px;    
+}
+.fullAreaProfile .firstPageProfile .firstProfilePageName input[type="text"]
+{
+    width: 220px;
+    margin-left: 65px;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding-left: 5px;
+    border-color: chocolate;    
+}
+.fullAreaProfile .firstPageProfile .firstProfilePageFees
+{
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.fullAreaProfile .firstPageProfile .firstProfilePageFees span
+{
+    display: grid;
+    color: #FF7900;    
+    margin-left: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    text-emphasis: 20px;    
+}
+.fullAreaProfile .firstPageProfile .firstProfilePageFees input[type="number"]
+{
+    width: 220px;
+    margin-left: 65px;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding-left: 5px;
+    text-align: center;
+    color: black; 
+    border-color: chocolate;    
+}
+.fullAreaProfile .firstPageProfile .firstProfilePageFees label
+{
+    color: #FF7900;    
+    margin-left: 5px;   
+}
+.fullAreaProfile .firstPageProfile .addFirstPageProfileSubmit
+{
+    float: right;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+.fullAreaProfile .firstPageProfile .addFirstPageProfileSubmit .sub
+{
+    display: grid;
+    height: 50px;
+    width: 150px;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bold;
+    border-color: chocolate;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+.fullAreaProfile .firstPageProfile .addFirstPageProfileSubmit .sub:hover
+{
+    background-color: #FF7900;
+    border-color: white;
+    color: white;
+    border-radius: 15px;
+}
+.fullAreaProfile .secondPageProfile
+{
+    height: 500px;
+    width: 50%;
+    display: none;
+    margin: auto;
+    position: relative;
+    top: 7%;
+    border: 3px outset #FF7900;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0);
+}
+.fullAreaProfile .secondPageProfile .secondProfilePageTitle
+{
+    margin-top: 5%;
+    height: auto;
+    text-align: center;
+    text-indent: 10px;
+    font-size: 40px;
+    font-family: monospace;
+    color: #FF7900;    
+}
+.fullAreaProfile .secondPageProfile .secondProfilePageName span
+{
+    display: grid;
+    color: #FF7900;    
+    margin-left: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    text-emphasis: 20px;    
+}
+.fullAreaProfile .secondPageProfile .secondProfilePageName .secondPageProfileSelectService
+{
+    width: 120px;
+    margin-left: 65px;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding-left: 5px;
+    border-color: chocolate;
+}
+.fullAreaProfile .secondPageProfile .secondProfilePageName input[type="button"]
+{
+    width: 120px;
+    margin-left: 65px;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding-left: 5px;
+    border-color: chocolate;    
+}
+.fullAreaProfile .secondPageProfile .allSelectedServices
+{
+    height: auto;
+}
+.fullAreaProfile .secondPageProfile .allSelectedServices section
+{
+    border-top: 1px solid #FF7900;
+    border-bottom: 1px solid #FF7900;
+    margin-top: 10px;
+}
+.fullAreaProfile .secondPageProfile .allSelectedServices section span
+{
+    display: grid;
+    color: white;    
+    margin-left: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    text-emphasis: 20px;   
+}
+.fullAreaProfile .secondPageProfile .allSelectedServices section label
+{
+    color: #FF7900;
+    font-size: 15px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fullAreaProfile .secondPageProfile .allSelectedServices section input[type="number"]
+{
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    padding-left: 5px;
+    text-align: center;
+    color: black; 
+    border-color: chocolate;    
+}
+.fullAreaProfile .secondPageProfile .allSelectedServices section h6
+{
+    display: inline;
+    color: #FF7900; 
+    margin-right: 15px;
+    margin-left: 5px;
+}
+.fullAreaProfile .secondPageProfile .addSecondPageProfileSubmit
+{
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.fullAreaProfile .secondPageProfile .addSecondPageProfileSubmit .sub
+{
+    display: grid;
+    height: 50px;
+    width: 150px;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bold;
+    border-color: chocolate;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+.fullAreaProfile .secondPageProfile .addSecondPageProfileSubmit .sub:hover
+{
+    background-color: #FF7900;
+    border-color: white;
+    color: white;
+    border-radius: 15px;
+}
+.fullAreaProfile .thirdPageProfile
+{
+    height: 500px;
+    width: 50%;
+    display: none;
+    margin: auto;
+    position: relative;
+    top: 7%;
+    border: 3px outset #FF7900;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0);
+}
+.fullAreaProfile .thirdPageProfile .thirdPageProfilePageTitle
+{
+    margin-top: 5%;
+    height: auto;
+    text-align: center;
+    text-indent: 3px;
+    font-size: 30px;
+    font-family: monospace;
+    color: #FF7900;
+}
+.fullAreaProfile .thirdPageProfile .thirdProfilePageFreeUnits
+{
+    display: block;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+.fullAreaProfile .thirdPageProfile .thirdProfilePageFreeUnits span
+{
+    color: #FF7900;    
+    margin-left: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    text-emphasis: 20px;    
+}
+.fullAreaProfile .thirdPageProfile .thirdProfilePageFreeUnits input[type="number"]
+{
+    width: 120px;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding-left: 5px;
+    text-align: center;
+    color: black; 
+    border-color: chocolate;    
+}
+.fullAreaProfile .thirdPageProfile .thirdProfilePageFreeUnits label
+{
+    color: #FF7900;    
+    margin-left: 5px;   
+}
+.fullAreaProfile .thirdPageProfile .addthirdPageProfileSubmit
+{
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.fullAreaProfile .thirdPageProfile .addthirdPageProfileSubmit .sub
+{
+    display: grid;
+    height: 50px;
+    width: 150px;
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bold;
+    border-color: chocolate;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+.fullAreaProfile .thirdPageProfile .addthirdPageProfileSubmit .sub:hover
+{
+    background-color: #FF7900;
+    border-color: white;
+    color: white;
+    border-radius: 15px;
+}*/
+/*Profile/
+/Profile List/
+.fullAreaProfileList
+{
+    height: 570px;
+    width: 90%;
+    background-color: white;
+    padding-top: 30px;
+}
+.fullAreaProfileList thead th
+{
+    color: #FF7900;
+}
+.fullAreaProfileList tbody
+{
+    font-weight: bold;
+}
+.fullAreaProfileList tbody .seeMore
+{
+    color: black;
+    text-decoration: none;
+}
+.fullAreaProfileList tbody .seeMore span
+{
+    margin-left: 5px;
+}
+/Profile List/
+/Profile Show/
+.fullAreaProfileEdit .row
+{
+    height: 570px;
+    background-color: black;
+}
+.fullAreaProfileEdit .row .leftCol
+{
+    height: 100%;
+    border: 1px solid #FF7900;
+}
+.fullAreaProfileEdit .row .leftCol .distance
+{
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.fullAreaProfileEdit .row .leftCol span
+{
+    color: white;
+    font-size: 35px;
+    font-family: sans-serif;
+    text-indent: 5px;
+    font-weight: bold;
+}
+.fullAreaProfileEdit .row .leftCol .profileInfo
+{
+    height: auto;
+    margin-top: 5%;
+    border-top: 1px solid #FF7900;
+    border-bottom: 1px solid #FF7900;
+}
+.fullAreaProfileEdit .row .leftCol .profileInfo .textHeader
+{
+    color: white;
+    margin-top: 5px;
+    display: grid;
+    text-decoration: none;
+    font-size: 30px;
+}
+.fullAreaProfileEdit .row .leftCol .profileInfo .textFooter
+{
+    color: #FF7900;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    height: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.fullAreaProfileEdit .row .middleCol
+{
+    height: 100%;
+    border-top: 1px solid #FF7900;
+    border-bottom: 1px solid #FF7900;
+}
+.fullAreaProfileEdit .row .middleCol .distance
+{
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.fullAreaProfileEdit .row .middleCol span
+{
+    color: white;
+    font-size: 35px;
+    font-family: sans-serif;
+    text-indent: 5px;
+    font-weight: bold;
+}
+.card-header
+{
+    background-color: black;
+}
+.btn-link
+{
+    text-decoration: none;
+    color: #FF7900;
+}
+.btn-link:hover
+{
+    text-decoration: none;
+    color: white;
+}
+.btn-link:active
+{
+    text-decoration: none;
+}
+.card
+{
+    background-color: #FF7900;
+}
+.card-body
+{
+    background-color: #FF7900;
+    color: white;
+    font-weight: bold;
+}
+.card-body .card-body-service
+{
+    height: 25%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;    
+}
+h6
+{
+    font-size: 17px;
+    text-indent: 5px;
+    display: inline-block;
+    color: black;
+    margin-top: 5%;
+}
+.fullAreaProfileEdit .row .rightCol
+{
+    height: 100%;
+    border: 1px solid #FF7900;
+}
+.fullAreaProfileEdit .row .rightCol .distance
+{
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.fullAreaProfileEdit .row .rightCol span
+{
+    color: white;
+    font-size: 35px;
+    font-family: sans-serif;
+    text-indent: 5px;
+    font-weight: bold;
+}
+.fullAreaProfileEdit .row .rightCol .profileFreeUnit
+{
+    height: auto;
+    margin-top: 5%;
+    border-top: 1px solid #FF7900;
+    border-bottom: 1px solid #FF7900;
+}
+.fullAreaProfileEdit .row .rightCol .profileFreeUnit .textHeader
+{
+    color: white;
+    margin-top: 5px;
+    display: grid;
+    text-decoration: none;
+    font-size: 30px;
+}
+.fullAreaProfileEdit .row .rightCol .profileFreeUnit .divFooter
+{
+    color: #FF7900;
+    text-decoration: none;
+    font-size: 10px;
+    display: block;
+    height: auto;
+    margin-bottom: 15px;
+}
+.fullAreaProfileEdit .row .rightCol .profileFreeUnit .divFooter span
+{
+    display: inline-block;
+    text-align: center;
+    width: 49%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16.5px;
+    color: #FF7900;
+    text-indent: 0px;
+}
+.fullAreaProfileEdit .row .rightCol .profileFreeUnit .textFooter
+{
+    color: #FF7900;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    height: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+/Profile Show/
+/Cards Display/
+.fullSize .cardDisplay
+{
+    height: 70%;
+    width: 27%;
+    border-radius: 25px;
+    background-color: black;
+    border: 3px solid #FF7900;
+    display: block;
+    float: left;
+    margin-left: 13%;
+    margin-top: 6%;
+    color: white;
+    text-align: center;
+}
+.fullSize .cardDisplay:hover
+{
+    cursor: pointer;
+    background-color: white;
+    border: 3px solid #FF7900;
+    color: #FF7900;
+}
+.fullSize .cardDisplay .profileIcon
+{
+    width: 30%;
+    height: 30%;
+    display: block;
+    margin: auto;
+    margin-top: 30%;
+    margin-bottom: 5%;
+}
+/Cards Display/
+/Add Customer/
+.fullSizeCustomer
+{
+    height: 570px;
+    background-color: black;
+}
+.fullSizeCustomer h1
+{
+    padding: 10px;
+    color: #FF7900;
+}
+.fullSizeCustomer .mainAreaCustomer
+{
+    height: 85%;
+    width: 95%;
+    margin: auto;
+    border: 2px dashed #FF7900;
+    overflow-x: hidden;
+    overflow-y: no-display;
+}
+.fullSizeCustomer .mainAreaCustomer .row
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.fullSizeCustomer .mainAreaCustomer .row .inputCustomer
+{
+    height: 20%;
+}
+.fullSizeCustomer .mainAreaCustomer .row .inputCustomer span
+{
+    margin-left: 5%;
+    color: white;
+    display: grid;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+}
+.fullSizeCustomer .mainAreaCustomer .row .inputCustomer label
+{
+    margin-left: 10%;
+    margin-right: 2%;
+    font-size: 20px;
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.fullSizeCustomer .mainAreaCustomer .row .inputCustomer select
+{
+    margin-left: 3%;
+    width: auto;
+    font-size: 20px;
+    margin-top: 5px;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px solid #FF7900;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.fullSizeCustomer .mainAreaCustomer .row .inputCustomer select:hover
+{
+    cursor: pointer;
+}
+.fullSizeCustomer .mainAreaCustomer .row .inputCustomer select option
+{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.fullSizeCustomer .mainAreaCustomer .row .inputCustomer input[type="number"]
+{
+    width: 70%;
+    padding-left: 5px;
+    border: 1px solid #FF7900;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.fullSizeCustomer .mainAreaCustomer .row .inputCustomer input[type="text"]
+{
+    width: 70%;
+    padding-left: 5px;
+    margin-left: 20%;
+    margin-top: 5px;
+    border: 1px solid #FF7900;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.fullSizeCustomer .mainAreaCustomer .row .inputCustomer input[type="email"]
+{
+    width: 70%;
+    padding-left: 5px;
+    margin-left: 20%;
+    margin-top: 5px;
+    border: 1px solid #FF7900;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.fullSizeCustomer .mainAreaCustomer .row .inputCustomer input[type="button"]
+{
+    width: 40px;
+    margin-left: 5px;
+    margin-top: 5px;
+    border: 1px solid #FF7900;
+    border-radius: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.fullSizeCustomer .mainAreaCustomer .row .allRecurringServices span
+{
+    color: white;
+    display: grid;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;       
+}
+.fullSizeCustomer .mainAreaCustomer .row .allRecurringServices div
+{
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: auto;
+    border: 1px solid #FF7900;
+    border-radius: 25px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.fullSizeCustomer .mainAreaCustomer .row .allRecurringServices div:hover
+{
+    border: 1px solid #FF7900;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.fullSizeCustomer .mainAreaCustomer input[type="submit"]
+{
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 14%;
+    height: 11%;
+    background-color: black;
+    border-radius: 25px;
+    border: 1px solid white;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.fullSizeCustomer .mainAreaCustomer input[type="submit"]:hover
+{
+    background-color: #FF7900;
+    border: 1px solid white;
+    color: white;
+}
+/Add Customer/
+/Tool Bar/
+/* width */
+/*::-webkit-scrollbar 
+{
+  width: 10px;
+}
+
+ Track 
+::-webkit-scrollbar-track 
+{
+  background: #ffffff;
+  border-radius: 25px;
+}
+
+ Handle 
+::-webkit-scrollbar-thumb 
+{
+  background: #888;
+}
+
+ Handle on hover 
+::-webkit-scrollbar-thumb:hover 
+{
+  background: #555;
+}Tool BaSearc
+.fullSizeSearch
+{
+    height: 570px;
+    background-color: black;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.fullSizeSearch h1
+{
+    padding: 10px;
+    color: #FF7900;
+}
+.fullSizeSearch .mainAreaSearch
+{
+    height: 70%;
+    width: 40%;
+    margin: auto;
+    border: 2px solid #FF7900;
+    border-radius: 25px;
+    background-color: black;
+}
+.fullSizeSearch .mainAreaSearch lable
+{
+    color: #FF7900;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+}
+.fullSizeSearch .mainAreaSearch .search-box
+{
+    display: inline-block;    
+    width: 50%;
+    padding-left: 5px;
+    margin-left: 4.5%;
+    margin-right: 1%;
+    margin-top: 20%;
+    border: 1px solid #FF7900;
+    border-radius: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+}
+
+.fullSizeSearch .mainAreaSearch .addCustomer[type="submit"]
+{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 40%;
+    height: 11%;
+    background-color: black;
+    border-radius: 25px;
+    border: 1px solid white;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.fullSizeSearch .mainAreaSearch .addCustomer[type="submit"]:hover
+{
+    background-color: #FF7900;
+    border: 1px solid white;
+    color: white;
+}Search PagSearch Resul
+#customer_data
+{
+    margin: 6% 1% 1% 1%;
+    align-items: center;
+    display: inline-block;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: solid;
+    border-color: #FF7900;
+    border-radius: 25px;
+    width:22%;
+    background-color: black;
+    color: white;
+}
+#customer_data .anch
+{
+    margin-left: 20%;
+    color: #FF7900;
+    text-decoration: none;
+}
+
+#customer_data .anch:hover
+{
+    text-decoration: underline;
+}Search ResulCustomer Detail
+#customer_data1
+{
+    margin: 1% 1% 1% 32%;
+    align-items: center;
+    display: inline-block;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: solid;
+    border-color: #FF7900;
+    border-radius:11%;
+    width:40%;
+    background-color: black;
+    color: white;
+}
+
+#f_name{
+    text-align: center;
+    color: white;
+}
+
+#msisdn1{
+    text-align: center;
+    color: white;
+}
+
+#email{
+    text-align: center;
+    color: white;
+}
+
+#address{
+    text-align: center;
+    color: white;
+}
+
+#start_date{
+    text-align: center;
+    color: white;
+}
+
+#end_date{
+    text-align: center;
+    color: white;
+}
+
+#free_voice_same,#services,#oservice
+{
+     text-align: center;
+    color: white;
+}
+
+#free_voice_diff,#free_sms_same,#free_sms_diff,#free_internet,#pfees,#pname,#renew
+{
+     text-align: center;
+    color: white;
+}
+
+#productpic
+{
+    width:54%;
+    height:25%;
+    align-self: center;
+    margin-right: 54%;
+    margin-left: 24%;
+}Customer DetailMain Pag
+.fullSizeMainPage
+{
+    height: 570px;
+    background-color: white;
+}
+.fullSizeMainPage h1
+{
+    padding: 10px;
+    color: #FF7900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.fullSizeMainPage .row
+{
+    height: 85%;
+}
+.fullSizeMainPage .row .mainStatic
+{
+    margin-top: 2%;
+    height: 80%;
+    width: 20%;
+    background-color: black;
+    border: 2px solid #FF7900;
+    border-radius: 25px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.fullSizeMainPage .row .mainStatic:hover
+{
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(255, 119, 0, 0.5);
+}
+.fullSizeMainPage .row .mainStatic:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+.fullSizeMainPage .row .mainStatic h2
+{
+    margin-top: 20%;
+    text-align: center;
+    color: #FF7900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.fullSizeMainPage .row .mainStatic .precent
+{
+    width: 100%;
+}
+.fullSizeMainPage .row .mainStatic .precent .number
+{
+    position: relative;
+    top: -105px;
+    left: 0px;
+    color: white;
+    transition: 0.5s;
+}
+.fullSizeMainPage .row .mainStatic:hover .precent .number h3
+{
+    position: relative;
+    top: -20px;
+    left: 0;
+    font-size: 60px;
+}
+.fullSizeMainPage .row .mainStatic .precent svg
+{
+    position: relative;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+}
+.fullSizeMainPage .row .mainStatic .precent svg circle
+{
+    fill: none;
+    stroke: white;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+.fullSizeMainPage .row .mainStatic .precent svg circle:nth-child(2)
+{
+    stroke-dashoffset: 440;
+    stroke-dasharray: 440;
+}
+.fullSizeMainPage .row .mainStatic:nth-child(1) svg circle:nth-child(2)
+{
+    stroke: #FF7900;
+}
+.fullSizeMainPage .row .mainStatic:nth-child(2) svg circle:nth-child(2)
+{
+    stroke: #FF7900;
+}
+.fullSizeMainPage .row .mainStatic:nth-child(3) svg circle:nth-child(2)
+{
+    stroke: #FF7900;
+}
+.fullSizeMainPage .row .mainStatic:nth-child(4) svg circle:nth-child(2)
+{
+    stroke: #FF7900;
+}Main PagCards Billing Displa
+.fullSize .cardDisplayforBilling
+{
+    height: 70%;
+    width: 20%;
+    border-radius: 25px;
+    background-color: black;
+    border: 3px solid #FF7900;
+    display: block;
+    float: left;
+    margin-left: 19%;
+    margin-top: 6%;
+    color: white;
+    text-align: center;
+}
+.fullSize .cardDisplayforBilling:hover
+{
+    cursor: pointer;
+    background-color: white;
+    border: 3px solid #FF7900;
+    color: #FF7900;
+}
+.fullSize .cardDisplayforBilling .billIcon
+{
+    width: 30%;
+    height: 30%;
+    display: block;
+    margin: auto;
+    margin-top: 30%;
+    margin-bottom: 5%;
+}Cards Billing DisplaGenerate Bil
+.fullSizeBillGenerator
+{
+    height: 570px;
+}
+.fullSizeBillGenerator .generateBill
+{
+    height: 500px;
+    width: 50%;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 7%;
+    border: 3px solid #FF7900;
+    border-radius: 25px;
+    background-color: rgb(0, 0, 0);
+}
+.fullSizeBillGenerator .generateBill h1
+{
+    display: block;
+    margin-top: 5%;
+    color: #FF7900;
+    text-align: center;
+    font-family: monospace;
+}
+.fullSizeBillGenerator .generateBill .phoneNumber
+{
+    display: block;
+    height: 100px;
+    border-bottom: 1px dashed #FF7900;
+}
+.fullSizeBillGenerator .generateBill .phoneNumber label
+{
+    display: grid;
+    margin-top: 1px;
+    color: white;    
+    margin-left: 10px;
+    font-family: monospace;
+    font-size: 25px;
+    text-emphasis: 20px;    
+}
+.fullSizeBillGenerator .generateBill .phoneNumber h5
+{
+    display: inline;
+    margin-left: 15%;
+    color: #FF7900;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;      
+}
+.fullSizeBillGenerator .generateBill .phoneNumber input[type="text"]
+{
+    width: 40%;
+    margin-left: 2%;
+    border-radius: 10px;
+    padding-left: 5px;
+    border-color: chocolate;     
+}
+.fullSizeBillGenerator .generateBill .phoneNumber input[type="date"]
+{
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 10px;
+    padding-left: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    border-color: chocolate;     
+}
+.fullSizeBillGenerator .generateBill input[type="submit"]
+{
+    width: 30%;
+    height: 10%;
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+    background-color: black;
+    border-radius: 25px;
+    border: 1px solid white;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+}
+.fullSizeBillGenerator .generateBill input[type="submit"]:hover
+{
+    background-color: #FF7900;
+    border: 1px solid white;
+    color: white;
+}Generate BilFoote
+.footerOrange
+{
+    background-color: black;
+    line-height: 77px;
+}
+.footerOrange p
+{
+    color: #FF7900;
+    padding: 0px;
+    margin: 0px;
+}*/
+/*/Footer/*/
