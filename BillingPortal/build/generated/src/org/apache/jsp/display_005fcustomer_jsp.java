@@ -49,6 +49,26 @@ public final class display_005fcustomer_jsp extends org.apache.jasper.runtime.Ht
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\n");
+      out.write("<style type=\"text/css\"> \n");
+      out.write("    body {\n");
+      out.write("       text-align: center;\n");
+      out.write("        color: blue;\n");
+      out.write("        margin: 0px;\n");
+      out.write("    padding: 0px;\n");
+      out.write("    height: 100vh;\n");
+      out.write("       font-size: 90px;\n");
+      out.write("      background-image: url('background2.jpg');\n");
+      out.write("      background-position: center;\n");
+      out.write("      background-repeat: no-repeat;\n");
+      out.write("      background-size: cover;\n");
+      out.write("      background-color: black;\n");
+      out.write("    color: white;\n");
+      out.write("    width: 100px;\n");
+      out.write("    text-align: center;\n");
+      out.write("    }\n");
+      out.write("</style>\n");
+      out.write("\n");
+      out.write("\n");
       out.write("\n");
       out.write("\n");
       out.write("\n");
@@ -59,6 +79,9 @@ public final class display_005fcustomer_jsp extends org.apache.jasper.runtime.Ht
       out.write("\n");
       out.write("\n");
 
+    
+    
+    
 try {
     String driver = "org.postgresql.Driver";
     String url = "jdbc:postgresql://batyr.db.elephantsql.com:5432/prkwfnoy";
@@ -79,14 +102,14 @@ try {
     int  totalColumn = rsmd.getColumnCount();
 
 
-    out.println("<table border='1' style='border-collapse:collapse'>");
+    out.println("<table border='1' style='border-collapse:collapse font-size=600px' >");
     out.println("<tr>");
 
     for(int i=1;i<=totalColumn;i++)
     {
         String columnName = rsmd.getColumnName(i);
         out.println("<th>"+columnName+"</th>");
-    }
+    } 
     out.println("</tr>");
 
     while(rs.next())
@@ -96,8 +119,18 @@ try {
         {            
             Object obj= rs.getObject(col);                    
             out.println("<td>"+ String.valueOf(obj) +"</td>");
+                    
+                   
+                    
         } 
-        out.println("</tr>");
+        
+         
+      out.write("\n");
+      out.write("            <input type=\"submit\" value=\"edit\" /> \n");
+      out.write("                    <input type=\"submit\" value=\"delete\" />\n");
+      out.write("                    ");
+
+                        out.println("</tr>");
     }
     out.println("</table>");
 
@@ -111,6 +144,8 @@ catch (SQLException ex) {
     out.print("VendorError: " + ex.getErrorCode());
 }
 
+      out.write('\n');
+      out.write('\n');
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

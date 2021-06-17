@@ -3,8 +3,15 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import java.sql.SQLException;
+import java.sql.ResultSetMetaData;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.PreparedStatement;
+import java.sql.Connection;
+import java.io.*;
 
-public final class log_005fin_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class display_005fprofiles_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -44,7 +51,7 @@ public final class log_005fin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("<style type=\"text/css\"> \n");
       out.write("    body {\n");
-      out.write("     \n");
+      out.write("       text-align: center;\n");
       out.write("        color: blue;\n");
       out.write("        margin: 0px;\n");
       out.write("    padding: 0px;\n");
@@ -57,42 +64,78 @@ public final class log_005fin_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("      background-color: black;\n");
       out.write("    color: white;\n");
       out.write("    \n");
-      out.write(" \n");
+      out.write("    text-align: center;\n");
       out.write("    }\n");
       out.write("</style>\n");
       out.write("\n");
-      out.write("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n");
-      out.write("<html lang=\"en\">\n");
-      out.write("<head>\n");
-      out.write("    <meta charset=\"UTF-8\">\n");
-      out.write("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n");
-      out.write("    <title>billing portal</title>\n");
-      out.write("    <link rel=\"stylesheet\" href=\"main_menu.css\">\n");
-      out.write("</head>\n");
-      out.write("<body>\n");
-      out.write("\n");
-      out.write("  <div class=\"container\">\n");
-      out.write("    <form id=\"login\" class=\"login\" action=\"login\">\n");
-      out.write("      <span class=\"loginTitle\">Login</span>\n");
-      out.write("      <div class=\"userName\">\n");
-      out.write("        <span >User Name</span>\n");
-      out.write("        <input  type=\"text\"  placeholder=\"UserName\" name=\"Name\" required/>\n");
-      out.write("      </div>\n");
-      out.write("      <div class=\"password\">\n");
-      out.write("        <span>Password</span>\n");
-      out.write("        <input type=\"password\"  placeholder=\"Password\" name=\"password\" required/>\n");
-      out.write("      </div>\n");
-      out.write("      <div class=\"submit\">\n");
-      out.write("        <input id=\"su\" class=\"sub\" type=\"submit\" value=\"Log In\"/>\n");
-      out.write("      </div>            \n");
-      out.write("    </form>\n");
-      out.write("  </div>\n");
-      out.write("<!-- Login Check -->\n");
       out.write("\n");
       out.write("\n");
-      out.write("   \n");
-      out.write("</body>\n");
-      out.write("</html>");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+
+try {
+    String driver = "org.postgresql.Driver";
+    String url = "jdbc:postgresql://batyr.db.elephantsql.com:5432/prkwfnoy";
+    String username = "prkwfnoy";
+    String password = "tsrl2sOlkZwBDmAX4xDVdo3v6VCyVio9";
+    String myDataField = null;
+    String myQuery = "select * from profile;";
+    Connection myConnection = null;
+    PreparedStatement myPreparedStatement = null;
+    ResultSet myResultSet = null;
+    Class.forName(driver).newInstance();
+    myConnection = DriverManager.getConnection(url,username,password);
+    System.out.println("Opened database successfully");
+    myPreparedStatement = myConnection.prepareStatement(myQuery);
+    ResultSet rs = myPreparedStatement.executeQuery();
+
+    ResultSetMetaData rsmd = rs.getMetaData();
+    int  totalColumn = rsmd.getColumnCount();
+
+
+    out.println("<table border='1' style='border-collapse:collapse'>");
+    out.println("<tr>");
+
+    for(int i=1;i<=totalColumn;i++)
+    {
+        String columnName = rsmd.getColumnName(i);
+        out.println("<th>"+columnName+"</th>");
+    }
+    out.println("</tr>");
+
+    while(rs.next())
+    {    
+        out.println("<tr>");
+        for(int col=1;col<=totalColumn;col++)
+        {            
+            Object obj= rs.getObject(col);                    
+            out.println("<td>"+ String.valueOf(obj) +"</td>");
+        } 
+        
+      out.write("\n");
+      out.write("            <input  type=\"submit\" value=\"edit\" /> \n");
+      out.write("                    <input type=\"submit\" value=\"delete\" />\n");
+      out.write("                    ");
+ 
+                        out.println("</td>");  
+        out.println("</tr>");
+    }
+    out.println("</table>");
+
+}
+catch(ClassNotFoundException e){
+    e.printStackTrace();
+}
+catch (SQLException ex) {
+    out.print("SQLException: "+ex.getMessage());
+    out.print("SQLState: " + ex.getSQLState());
+    out.print("VendorError: " + ex.getErrorCode());
+}
+
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

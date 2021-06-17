@@ -3,6 +3,26 @@
     Created on : Jun 16, 2021, 12:17:54 AM
     Author     : New
 --%>
+<style type="text/css"> 
+    body {
+       text-align: center;
+        color: blue;
+        margin: 0px;
+    padding: 0px;
+    height: 100vh;
+       font-size: 90px;
+      background-image: url('background2.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: black;
+    color: white;
+    width: 100px;
+    text-align: center;
+    }
+</style>
+
+
 
 <%@page import="java.sql.SQLException"%>
 <%@page import="java.sql.ResultSetMetaData"%>
@@ -13,6 +33,9 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="java.io.*" %>
 <%
+    
+    
+    
 try {
     String driver = "org.postgresql.Driver";
     String url = "jdbc:postgresql://batyr.db.elephantsql.com:5432/prkwfnoy";
@@ -33,14 +56,14 @@ try {
     int  totalColumn = rsmd.getColumnCount();
 
 
-    out.println("<table border='1' style='border-collapse:collapse'>");
+    out.println("<table border='1' style='border-collapse:collapse font-size=600px' >");
     out.println("<tr>");
 
     for(int i=1;i<=totalColumn;i++)
     {
         String columnName = rsmd.getColumnName(i);
         out.println("<th>"+columnName+"</th>");
-    }
+    } 
     out.println("</tr>");
 
     while(rs.next())
@@ -50,8 +73,17 @@ try {
         {            
             Object obj= rs.getObject(col);                    
             out.println("<td>"+ String.valueOf(obj) +"</td>");
-        } 
-        out.println("</tr>");
+                    
+         }          
+            out.println("<td>");        
+         
+        
+         %>
+            <input  type="submit" value="edit" /> 
+                    <input type="submit" value="delete" />
+                    <% 
+                        out.println("</td>");  
+                        out.println("</tr>");
     }
     out.println("</table>");
 
@@ -65,3 +97,4 @@ catch (SQLException ex) {
     out.print("VendorError: " + ex.getErrorCode());
 }
 %>
+

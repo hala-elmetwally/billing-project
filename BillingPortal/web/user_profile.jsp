@@ -4,7 +4,24 @@
     Author     : New
 --%>
 
-
+<style type="text/css"> 
+    body {
+     
+        color: blue;
+        margin: 0px;
+    padding: 0px;
+    height: 100vh;
+       font-size: 50px;
+      background-image: url('background2.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: black;
+    color: white;
+    
+ 
+    }
+</style>
 <%@page import="java.sql.SQLException"%>
 <%@page import="java.sql.ResultSetMetaData"%>
 <%@page import="java.sql.DriverManager"%>

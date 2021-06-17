@@ -13,10 +13,17 @@
         <style type="text/css"> 
     body {
        text-align: center;
-        color: blue;
+       
         margin: 0px;
     padding: 0px;
     height: 100vh;
+       font-size: 20px;
+      background-image: url('background2.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: white;
+    color: white;
     }
     
 /*    form{
@@ -24,24 +31,40 @@
         margin: 0px;
         padding: 0px;
     }*/
+ #add{
+    font-size: 27px;
+    background-color: white;
+    color: blueviolet;
+    border: none;
+    /* cursor: pointer; */
+    width: 300px;
+    height: 40px;
+    border-radius: 70px;
+    /* text-align: center; */
+    text-align: center;
+    font-family: cursive;
+    border: none;
+    
+}
+
     
 </style>
     </head>
     <body>
-        <h3>Hello Admin!</h3>
+        <h1 >Hello Admin!</h1>
         <form action="add_customer.jsp">
-        <input type="submit" value="Add Customer" /><br><br></form>
+        <input id="add" type="submit" value="Add Customer" /><br><br></form>
         <form action="add_profile.jsp">
-            <input type="submit" value="Add Profile"/><br><br></form>
+            <input id="add" type="submit" value="Add Profile"/><br><br></form>
         <form action="upload_cdr.jsp">
-            <input type="submit" value="Upload CDR"/><br><br></form>
+            <input id="add" type="submit" value="Upload CDR"/><br><br></form>
         <form action="display_customer.jsp">
-            <input type="submit" value="Display All Customers"/><br><br></form>
+            <input id="add" type="submit" value="Display All Customers"/><br><br></form>
         <form action="display_profiles.jsp">
-            <input type="submit" value="Display All Profiles"/><br><br></form>
+            <input id="add" type="submit" value="Display All Profiles"/><br><br></form>
         <form action="display_services.jsp">
-            <input type="submit" value="Display All Services"/><br><br></form>
+            <input id="add" type="submit" value="Display All Services"/><br><br></form>
         <form action="display_invoices.jsp">
-            <input type="submit" value="Display Invoices"/><br><br></form>
+            <input id="add" type="submit" value="Display Invoices"/><br><br></form>
     </body>
 </html>

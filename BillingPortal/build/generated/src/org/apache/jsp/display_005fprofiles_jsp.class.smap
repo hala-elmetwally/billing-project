@@ -1,0 +1,12 @@
+SMAP
+display_005fprofiles_jsp.java
+JSP
+*S JSP
+*F
++ 0 display_profiles.jsp
+display_profiles.jsp
+*L
+5,68:51
+72,4:119
+76,15:124
+*E

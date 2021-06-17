@@ -4,7 +4,24 @@
     Author     : New
 --%>
 
-
+<style type="text/css"> 
+    body {
+       text-align: center;
+        color: blue;
+        margin: 0px;
+    padding: 0px;
+    height: 100vh;
+       font-size: 50px;
+      background-image: url('background2.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: black;
+    color: white;
+    
+    text-align: center;
+    }
+</style>
 <%@page import="java.sql.SQLException"%>
 <%@page import="java.sql.ResultSetMetaData"%>
 <%@page import="java.sql.DriverManager"%>
@@ -52,6 +69,12 @@ try {
             Object obj= rs.getObject(col);                    
             out.println("<td>"+ String.valueOf(obj) +"</td>");
         } 
+         out.println("<td>");
+%>
+            <input  type="submit" value="edit" /> 
+            <input type="submit" value="delete" />
+<%
+            out.println("</td>");
         out.println("</tr>");
     }
     out.println("</table>");

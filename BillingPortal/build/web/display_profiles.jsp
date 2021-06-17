@@ -3,7 +3,24 @@
     Created on : Jun 16, 2021, 12:30:46 AM
     Author     : New
 --%>
+<style type="text/css"> 
+    body {
+        text-align: center;
+        color: blue;
+        margin: 0px;
+        padding: 0px;
+        height: 100vh;
+        font-size: 50px;
+        background-image: url('background2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+        color: white;
 
+        text-align: center;
+    }
+</style>
 
 <%@page import="java.sql.SQLException"%>
 <%@page import="java.sql.ResultSetMetaData"%>
@@ -14,55 +31,55 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="java.io.*" %>
 <%
-try {
-    String driver = "org.postgresql.Driver";
-    String url = "jdbc:postgresql://batyr.db.elephantsql.com:5432/prkwfnoy";
-    String username = "prkwfnoy";
-    String password = "tsrl2sOlkZwBDmAX4xDVdo3v6VCyVio9";
-    String myDataField = null;
-    String myQuery = "select * from profile;";
-    Connection myConnection = null;
-    PreparedStatement myPreparedStatement = null;
-    ResultSet myResultSet = null;
-    Class.forName(driver).newInstance();
-    myConnection = DriverManager.getConnection(url,username,password);
-    System.out.println("Opened database successfully");
-    myPreparedStatement = myConnection.prepareStatement(myQuery);
-    ResultSet rs = myPreparedStatement.executeQuery();
+    try {
+        String driver = "org.postgresql.Driver";
+        String url = "jdbc:postgresql://batyr.db.elephantsql.com:5432/prkwfnoy";
+        String username = "prkwfnoy";
+        String password = "tsrl2sOlkZwBDmAX4xDVdo3v6VCyVio9";
+        String myDataField = null;
+        String myQuery = "select * from profile;";
+        Connection myConnection = null;
+        PreparedStatement myPreparedStatement = null;
+        ResultSet myResultSet = null;
+        Class.forName(driver).newInstance();
+        myConnection = DriverManager.getConnection(url, username, password);
+        System.out.println("Opened database successfully");
+        myPreparedStatement = myConnection.prepareStatement(myQuery);
+        ResultSet rs = myPreparedStatement.executeQuery();
 
-    ResultSetMetaData rsmd = rs.getMetaData();
-    int  totalColumn = rsmd.getColumnCount();
+        ResultSetMetaData rsmd = rs.getMetaData();
+        int totalColumn = rsmd.getColumnCount();
 
-
-    out.println("<table border='1' style='border-collapse:collapse'>");
-    out.println("<tr>");
-
-    for(int i=1;i<=totalColumn;i++)
-    {
-        String columnName = rsmd.getColumnName(i);
-        out.println("<th>"+columnName+"</th>");
-    }
-    out.println("</tr>");
-
-    while(rs.next())
-    {    
+        out.println("<table border='1' style='border-collapse:collapse'>");
         out.println("<tr>");
-        for(int col=1;col<=totalColumn;col++)
-        {            
-            Object obj= rs.getObject(col);                    
-            out.println("<td>"+ String.valueOf(obj) +"</td>");
-        } 
-        out.println("</tr>");
-    }
-    out.println("</table>");
 
-}
-catch(ClassNotFoundException e){
-    e.printStackTrace();
-}
-catch (SQLException ex) {
-    out.print("SQLException: "+ex.getMessage());
-    out.print("SQLState: " + ex.getSQLState());
-    out.print("VendorError: " + ex.getErrorCode());
-}
+        for (int i = 1; i <= totalColumn; i++) {
+            String columnName = rsmd.getColumnName(i);
+            out.println("<th>" + columnName + "</th>");
+        }
+        out.println("</tr>");
+
+        while (rs.next()) {
+            out.println("<tr>");
+            for (int col = 1; col <= totalColumn; col++) {
+                Object obj = rs.getObject(col);
+                out.println("<td>" + String.valueOf(obj) + "</td>");
+            }
+            out.println("<td>");
+%>
+            <input  type="submit" value="edit" /> 
+            <input type="submit" value="delete" />
+<%
+            out.println("</td>");
+            out.println("</tr>");
+        }
+        out.println("</table>");
+
+    } catch (ClassNotFoundException e) {
+        e.printStackTrace();
+    } catch (SQLException ex) {
+        out.print("SQLException: " + ex.getMessage());
+        out.print("SQLState: " + ex.getSQLState());
+        out.print("VendorError: " + ex.getErrorCode());
+    }
 %>
