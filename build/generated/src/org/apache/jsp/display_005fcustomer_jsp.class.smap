@@ -1,0 +1,23 @@
+SMAP
+display_005fcustomer_jsp.java
+JSP
+*S JSP
+*F
++ 0 display_customer.jsp
+display_customer.jsp
++ 1 header.html
+header.html
+*L
+5,15:57
+1#1,20:71
+19#0,23:90
+41,3:113
+43,36:116
+78,3:152
+81,2:155,3
+83,2:161
+85,10:164
+94,6:174
+100:180,3
+101,5:183
+*E
