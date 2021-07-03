@@ -1,0 +1,28 @@
+customer:
+CREATE TABLE customer (cust_id serial PRIMARY KEY,email text,name text,msisdn text NOT NULL,imsi text NOT NULL,address text,profile_id serial references profile(prof_id),username text,password text,adminflag int,renewday int);
+
+cdr:
+CREATE TABLE cdr (cdr_id serial PRIMARY KEY,calling_no text,called_no text,cdr_date text,consumption int,start_time text,service_id int,profile_id serial references profile(prof_id) ,call_duration int,is_rated int);
+
+free_units:
+CREATE TABLE free_units (free_id serial PRIMARY KEY,call_units_onnet integer,call_units_crossnet int,sms_onnet int,sms_crossnet int,data_units int,customer_id serial references customer(cust_id));
+
+occ:
+CREATE TABLE occ(occ_id serial primary key ,customer_id int references customer(cust_id),service_name text,cost float,month_no int);
+
+profile: 
+CREATE TABLE profile(prof_id serial primary key,name text);====
+
+service:
+CREATE TABLE service(serv_id serial primary key, name text);
+
+prof_service:
+CREATE TABLE prof_service(servic_id int references service(serv_id),profile_id int references profile(prof_id ), PRIMARY KEY (servic_id,profile_id));
+
+rating:
+CREATE TABLE rating(service_id int references service(serv_id),profile_id int references profile(prof_id ), PRIMARY KEY (servic_id,profile_id),	fees_on_net double precision,fees_cross_net double precision,fees_inter double precision);
+
+invoice:
+CREATE TABLE invoice(customer_id serial PRAIMARY KEY,name text,voice_units int,sms_units int,data_units int,total_cost float,bill_generation int,path text,other_services_cost float);
+
+
